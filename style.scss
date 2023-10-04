@@ -1,0 +1,140 @@
+@import "mixins";
+
+
+// .title{
+
+//     text-align: center;
+//     color: aqua;
+// }
+$color_select_site: #0a0de2;
+
+$width_site: 1140px;
+$backblock: rgb(28, 28, 29);
+
+.body {
+  font-family: "Lato", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - $width_site / 2);
+  padding-right: calc(50% - $width_site / 2);
+}
+
+.top_head_heading {
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color_select_site;
+}
+.bredcrumbs_link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: gray;
+}
+
+.bredcrumbs_link_site {
+  font-weight: 700;
+  color: $color_select_site;
+}
+
+.header {
+  height: 75px;
+  background-color: $backblock;
+  display: flex;
+  align-items: center;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+
+.top_head {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+
+// product_block
+
+.container_product {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  .box_product {
+    width: 300px;
+    height: 585px;
+    color: $backblock;
+    display: flex;
+    flex-wrap: wrap;
+    .product_img {
+      width: 300px;
+      height: 420px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+
+
+// center
+
+
+.center_container{
+  width: 100vw;
+  height: 200px;
+  @include centr_mixin();
+
+}
+
+.box_best_gerl{
+
+
+  width: 100px;
+  height: 100px;
+  background-image: url(./img/img_product/1.png);
+  background-size: cover;
+}
+
+
+
+
+
+
+.footer_container {
+  background-color: $backblock;
+
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  .footer_box {
+    width: 90px;
+    height: 100px;
+    border-radius: 25%;
+    background-image: url(./img/img_product/1.png);
+    // background-size: cover;
+    background-size: 100%;
+  }
+}
+
+// .footer_box {
+//   width: 90px;
+//   height: 100px;
+//   border-radius: 25%;
+//   background-image: url(./img/img_product/1.png);
+//   // background-size: cover;
+//   background-size: 100%;
+// }
